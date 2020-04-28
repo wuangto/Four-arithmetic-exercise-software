@@ -83,10 +83,10 @@ void main(){
 
 system("color 74");		//改变输出背景和字体
 srand(time(NULL));		//声明随机函数
-int i=0,m,f=0;
+int i,m,f=0;
 printf("请输入需要出题的题数:");
 scanf("%d",&m);
-for(i;i<m;i++){			//循环输出题目
+for(i=m;i<0;i--){			//循环输出题目
 	printf("第%d题:	",i+1);
 	int s=rand()%3;
 	switch(s){
